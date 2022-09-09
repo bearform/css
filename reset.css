@@ -24,6 +24,10 @@
   p, hr, pre, blockquote, ol, ul, menu, dl, figure {
     margin-block: 0;
   }
+ 
+  hr {
+    border-width: 0.5px;
+  }
 
   blockquote, figure {
     margin-inline: 0;
