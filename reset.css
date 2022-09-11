@@ -1,10 +1,9 @@
 @layer reset {
   *, ::before, ::after {
     box-sizing: border-box;
-    line-height: calc(1.17em + 4px);
   }
 
-  :root {
+  html {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
   }
@@ -56,9 +55,5 @@
 
   img, video, svg, canvas {
     block-size: auto;
-  }
-
-  iframe {
-    border: 0;
   }
 }
