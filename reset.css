@@ -1,59 +1,61 @@
 @layer reset {
-  *, ::before, ::after {
+  *,
+  ::before,
+  ::after {
     box-sizing: border-box;
   }
 
-  html {
+  :where(html) {
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
   }
 
   /* Sections */
 
-  body {
+  :where(body) {
     margin: 0;
   }
 
-  h1, h2, h3, h4, h5, h6 {
+  :where(h1, h2, h3, h4, h5, h6) {
     margin-block: 0;
   }
 
   /* Grouping content */
 
-  p, hr, pre, blockquote, ol, ul, menu, dl, figure {
+  :where(p, hr, pre, blockquote, ol, ul, menu, dl, figure) {
     margin-block: 0;
   }
 
-  blockquote {
+  :where(blockquote) {
     margin-inline: 2.5em;
   }
 
-  figure {
+  :where(figure) {
     margin-inline: 0;
   }
 
-  ol, ul, menu {
+  :where(ol, ul, menu) {
     padding-inline-start: 2.5em;
   }
 
-  dd {
+  :where(dd) {
     margin-inline-start: 2.5em;
   }
 
   /* Text-level semantics */
 
-  sub, sup {
+  :where(sub, sup) {
     line-height: 0;
   }
 
   /* Embedded content */
 
-  img, iframe, embed, object, video, audio, svg, canvas {
+  :where(img, iframe, embed, object, video, audio, svg, canvas) {
     max-inline-size: 100%;
     vertical-align: middle;
   }
 
-  img, video, svg, canvas {
+  :where(img, video, svg, canvas) {
     block-size: auto;
   }
 }
