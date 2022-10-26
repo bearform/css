@@ -2,4 +2,5 @@
 
 ## CDN links
 
-- [CSS reset](https://cdn.jsdelivr.net/gh/bearform/css/reset.css)
+- [Reset](https://cdn.jsdelivr.net/gh/bearform/css/reset.css)
+- [Typography](https://cdn.jsdelivr.net/gh/bearform/css/typography.css)
