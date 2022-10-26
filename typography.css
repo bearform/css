@@ -1,0 +1,20 @@
+@layer typography {
+  *,
+  ::before,
+  ::after {
+    line-height: calc(1.15em + 6px);
+  }
+
+  :where(html) {
+    font-family: system-ui, -apple-system, 'Segoe UI', 'Roboto', 'Ubuntu',
+      'Cantarell', 'Noto Sans', sans-serif, 'Apple Color Emoji',
+      'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  }
+
+  :where(code, kbd, samp, pre) {
+    font-family: ui-monospace, 'Menlo', 'Consolas', 'Roboto Mono',
+      'Ubuntu Monospace', 'Noto Mono', 'Oxygen Mono', 'Liberation Mono',
+      monospace, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol',
+      'Noto Color Emoji';
+  }
+}
