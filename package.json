@@ -1,0 +1,5 @@
+{
+  "name": "@bearform/css-reset",
+  "version": "1.0.0",
+  "main": "reset.css"
+}

@@ -1,61 +1,128 @@
+/* https://html.spec.whatwg.org/multipage/#toc-semantics */
+
 @layer reset {
   *,
   ::before,
   ::after {
     box-sizing: border-box;
+    line-height: calc(1.125em + 3px);
   }
 
-  :where(html) {
+  /* Document */
+
+  :root {
+    font-family: system-ui, sans-serif;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
   }
 
   /* Sections */
 
-  :where(body) {
+  body {
     margin: 0;
   }
 
-  :where(h1, h2, h3, h4, h5, h6) {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
     margin-block: 0;
+  }
+
+  h1 {
+    font-size: 2em;
   }
 
   /* Grouping content */
 
-  :where(p, hr, pre, blockquote, ol, ul, menu, dl, figure) {
+  p,
+  hr,
+  pre,
+  blockquote,
+  ol,
+  ul,
+  menu,
+  dl,
+  figure {
     margin-block: 0;
   }
 
-  :where(blockquote) {
+  pre {
+    font-family: ui-monospace, monospace;
+  }
+
+  blockquote {
     margin-inline: 2.5em;
   }
 
-  :where(figure) {
-    margin-inline: 0;
-  }
-
-  :where(ol, ul, menu) {
+  ol,
+  ul,
+  menu {
     padding-inline-start: 2.5em;
   }
 
-  :where(dd) {
+  dd {
     margin-inline-start: 2.5em;
+  }
+
+  figure {
+    margin-inline: 0;
   }
 
   /* Text-level semantics */
 
-  :where(sub, sup) {
+  code,
+  samp,
+  kbd {
+    font-family: ui-monospace, monospace;
+  }
+
+  sub,
+  sup {
     line-height: 0;
   }
 
   /* Embedded content */
 
-  :where(img, iframe, embed, object, video, audio, svg, canvas) {
+  img,
+  iframe,
+  embed,
+  object,
+  video,
+  audio,
+  svg,
+  canvas {
     max-inline-size: 100%;
     vertical-align: middle;
   }
 
-  :where(img, video, svg, canvas) {
+  img,
+  video,
+  svg,
+  canvas {
     block-size: auto;
+  }
+
+  /* Tabular data */
+
+  caption {
+    text-align: start;
+  }
+
+  th {
+    padding: 0;
+    text-align: start;
+  }
+
+  /* Forms */
+
+  input,
+  button,
+  select,
+  textarea {
+    color: inherit;
+    font: inherit;
   }
 }
