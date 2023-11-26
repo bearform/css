@@ -1,25 +1,10 @@
 /* https://html.spec.whatwg.org/multipage/#toc-semantics */
 
 @layer reset {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-    line-height: calc(1.125em + 3px);
-  }
-
-  /* Document */
-
-  :root {
-    font-family: system-ui, sans-serif;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-  }
-
   /* Sections */
 
   body {
-    margin: 0;
+    margin: unset;
   }
 
   h1,
@@ -28,11 +13,8 @@
   h4,
   h5,
   h6 {
-    margin-block: 0;
-  }
-
-  h1 {
-    font-size: 2em;
+    margin-block: unset;
+    font-size: unset;
   }
 
   /* Grouping content */
@@ -46,83 +28,24 @@
   menu,
   dl,
   figure {
-    margin-block: 0;
-  }
-
-  pre {
-    font-family: ui-monospace, monospace;
+    margin-block: unset;
   }
 
   blockquote {
-    margin-inline: 2.5em;
+    margin-inline: unset;
   }
 
   ol,
   ul,
   menu {
-    padding-inline-start: 2.5em;
+    padding-inline-start: unset;
   }
 
   dd {
-    margin-inline-start: 2.5em;
+    margin-inline-start: unset;
   }
 
   figure {
-    margin-inline: 0;
-  }
-
-  /* Text-level semantics */
-
-  code,
-  samp,
-  kbd {
-    font-family: ui-monospace, monospace;
-  }
-
-  sub,
-  sup {
-    line-height: 0;
-  }
-
-  /* Embedded content */
-
-  img,
-  iframe,
-  embed,
-  object,
-  video,
-  audio,
-  svg,
-  canvas {
-    max-inline-size: 100%;
-    vertical-align: middle;
-  }
-
-  img,
-  video,
-  svg,
-  canvas {
-    block-size: auto;
-  }
-
-  /* Tabular data */
-
-  caption {
-    text-align: start;
-  }
-
-  th {
-    padding: 0;
-    text-align: start;
-  }
-
-  /* Forms */
-
-  input,
-  button,
-  select,
-  textarea {
-    color: inherit;
-    font: inherit;
+    margin-inline: unset;
   }
 }
