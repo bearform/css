@@ -41,6 +41,10 @@
     padding-inline-start: unset;
   }
 
+  li {
+    list-style-type: none;
+  }
+
   dd {
     margin-inline-start: unset;
   }
