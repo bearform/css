@@ -14,6 +14,7 @@
   h5,
   h6 {
     margin-block: unset;
+    font-weight: unset;
     font-size: unset;
   }
 
@@ -39,10 +40,6 @@
   ul,
   menu {
     padding-inline-start: unset;
-  }
-
-  li {
-    list-style-type: none;
   }
 
   dd {
