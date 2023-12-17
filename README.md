@@ -1,5 +1,5 @@
-# CSS Reset
+# CSS
 
-## CDN
+## jsDelivr CDN links
 
-- [jsDelivr](https://cdn.jsdelivr.net/gh/bearform/css-reset/reset.css)
+- [unset.css](https://cdn.jsdelivr.net/gh/bearform/css/unset.css)
