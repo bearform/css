@@ -1,9 +1,13 @@
+/* https://html.spec.whatwg.org/multipage/#toc-semantics */
+
 @layer remedy {
   *,
   ::before,
-  *::after {
+  ::after {
     box-sizing: border-box;
   }
+
+  /* Embedded content */
 
   img {
     display: block;
