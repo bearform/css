@@ -49,4 +49,12 @@
   figure {
     margin-inline: unset;
   }
+
+  /* Forms */
+
+  button {
+    border: unset;
+    font-family: unset;
+    font-size: unset;
+  }
 }
