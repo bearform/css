@@ -1,0 +1,13 @@
+@layer remedy {
+  *,
+  ::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  img {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+}
