@@ -54,6 +54,7 @@
 
   button {
     border: unset;
+    padding: unset;
     font-family: unset;
     font-size: unset;
   }
