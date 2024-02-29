@@ -42,6 +42,10 @@
     padding-inline-start: unset;
   }
 
+  ul > li::marker {
+    line-height: 1;
+  }
+
   dd {
     margin-inline-start: unset;
   }
