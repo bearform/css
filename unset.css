@@ -40,8 +40,8 @@
     padding-inline-start: unset;
   }
 
-  ul > li::marker {
-    line-height: 1;
+  li::marker {
+    font-family: unset;
   }
 
   dd {
