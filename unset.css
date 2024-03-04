@@ -1,6 +1,8 @@
 /* https://html.spec.whatwg.org/multipage/#toc-semantics */
 
-@layer unset.sections {
+@layer unset {
+  /* Sections */
+
   body {
     margin: unset;
   }
@@ -15,9 +17,9 @@
     font-weight: unset;
     font-size: unset;
   }
-}
 
-@layer unset.grouping-content {
+  /* Grouping content */
+
   p,
   hr,
   pre,
@@ -30,7 +32,8 @@
     margin-block: unset;
   }
 
-  blockquote {
+  blockquote,
+  figure {
     margin-inline: unset;
   }
 
@@ -48,12 +51,8 @@
     margin-inline-start: unset;
   }
 
-  figure {
-    margin-inline: unset;
-  }
-}
+  /* Forms */
 
-@layer unset.forms {
   button {
     border: unset;
     padding: unset;
