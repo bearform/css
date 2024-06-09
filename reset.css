@@ -1,6 +1,6 @@
 /* https://html.spec.whatwg.org/multipage/#toc-semantics */
 
-@layer bearform.reset {
+@layer reset {
   *,
   ::before,
   ::after {
@@ -11,6 +11,9 @@
 
   body {
     margin: unset;
+    color-scheme: light dark;
+    background-color: Canvas;
+    color: CanvasText;
     font-family: system-ui, sans-serif;
   }
 
