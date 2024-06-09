@@ -73,7 +73,7 @@
     color: unset;
   }
 
-  a:has(> :is(img, svg, iframe, embed, object, video, audio, svg, canvas)) {
+  a:has(> :where(img, svg, iframe, embed, object, video, audio, svg, canvas)) {
     display: block;
     inline-size: fit-content;
   }
@@ -139,14 +139,14 @@
     font-family: unset;
   }
 
-  input:not([type='range']),
+  input:where(:not([type='range'])),
   button,
   select,
   textarea {
     font-size: unset;
   }
 
-  input:is([type='color'], [type='image'], [type='range']) {
+  input:where([type='color'], [type='image'], [type='range']) {
     vertical-align: bottom;
   }
 
