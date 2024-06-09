@@ -7,14 +7,17 @@
     box-sizing: border-box;
   }
 
-  /* Sections */
-
-  body {
-    margin: unset;
+  :root {
     color-scheme: light dark;
     background-color: Canvas;
     color: CanvasText;
     font-family: system-ui, sans-serif;
+  }
+
+  /* Sections */
+
+  body {
+    margin: unset;
   }
 
   h1,
