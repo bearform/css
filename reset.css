@@ -1,3 +1,4 @@
+
 /* https://html.spec.whatwg.org/multipage/#toc-semantics */
 
 @layer bearform.reset {
@@ -73,6 +74,15 @@
 
   /*  Text-level semantics  */
 
+  a {
+    color: unset;
+  }
+
+  a:has(> :where(img, svg, iframe, embed, object, video, audio, svg, canvas)) {
+    display: block;
+    inline-size: fit-content;
+  }
+
   sub,
   sup {
     vertical-align: unset;
@@ -101,11 +111,6 @@
     display: block;
     max-inline-size: 100%;
     block-size: auto;
-  }
-
-  a:has(> :where(img, svg, iframe, embed, object, video, audio, svg, canvas)) {
-    display: block;
-    inline-size: fit-content;
   }
 
   iframe {
