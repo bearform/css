@@ -84,10 +84,15 @@
     inline-size: fit-content;
   }
 
+  small,
+  sub,
+  sup {
+    font-size: unset;
+  }
+
   sub,
   sup {
     vertical-align: unset;
-    font-size: unset;
   }
 
   sub {
