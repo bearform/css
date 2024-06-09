@@ -1,0 +1,166 @@
+/* https://html.spec.whatwg.org/multipage/#toc-semantics */
+
+@layer bearform.reset {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    line-height: round(2ex + 5px, 1px);
+  }
+
+  /* Sections */
+
+  body {
+    margin: unset;
+    font-family: system-ui, sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-block: unset;
+    font-weight: unset;
+    font-size: unset;
+  }
+
+  /* Grouping content */
+
+  p,
+  hr,
+  pre,
+  blockquote,
+  ol,
+  ul,
+  menu,
+  dl,
+  figure {
+    margin-block: unset;
+  }
+
+  hr {
+    border-width: 1px 0 0;
+    border-style: solid;
+  }
+
+  blockquote,
+  figure {
+    margin-inline: unset;
+  }
+
+  ol,
+  ul,
+  menu {
+    padding-inline-start: unset;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  li::marker {
+    font-family: unset;
+  }
+
+  dd {
+    margin-inline-start: unset;
+  }
+
+  /*  Text-level semantics  */
+
+  sub,
+  sup {
+    vertical-align: unset;
+    font-size: unset;
+  }
+
+  sub {
+    font-variant-position: sub;
+  }
+
+  sup {
+    font-variant-position: super;
+  }
+
+  /* Embedded content */
+
+  img,
+  svg,
+  iframe,
+  embed,
+  object,
+  video,
+  audio,
+  svg,
+  canvas {
+    display: block;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+
+  a:has(> :where(img, svg, iframe, embed, object, video, audio, svg, canvas)) {
+    display: block;
+    inline-size: fit-content;
+  }
+
+  iframe {
+    border: unset;
+  }
+
+  /*  Tabular data  */
+
+  caption,
+  th {
+    text-align: unset;
+  }
+
+  td,
+  th {
+    padding: unset;
+  }
+
+  th {
+    font-weight: unset;
+  }
+
+  /* Forms */
+
+  input,
+  button,
+  select,
+  textarea {
+    margin: unset;
+    padding: unset;
+    font-family: unset;
+  }
+
+  input:not([type='range']),
+  button,
+  select,
+  textarea {
+    font-size: unset;
+  }
+
+  input:where([type='color'], [type='image'], [type='range']) {
+    vertical-align: bottom;
+  }
+
+  textarea {
+    vertical-align: unset;
+  }
+
+  fieldset {
+    margin: unset;
+    padding: unset;
+    border: unset;
+  }
+
+  legend {
+    padding: unset;
+  }
+}
