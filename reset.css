@@ -78,7 +78,7 @@
   a {
     color: unset;
     text-decoration-thickness: 1px;
-    text-underline-offset: 1px;
+    text-underline-offset: 0.0625em;
   }
 
   a:has(> :where(img, svg, iframe, embed, object, video, audio, svg, canvas)) {
