@@ -11,8 +11,8 @@
     color-scheme: light dark;
     background-color: Canvas;
     color: CanvasText;
-    font-family: system-ui, sans-serif;
     font-synthesis: none;
+    font-family: system-ui, sans-serif;
   }
 
   /* Sections */
