@@ -12,6 +12,7 @@
     background-color: Canvas;
     color: CanvasText;
     font-family: system-ui, sans-serif;
+    font-synthesis: none;
   }
 
   /* Sections */
