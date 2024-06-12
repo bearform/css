@@ -78,7 +78,7 @@
   a {
     color: unset;
     text-decoration-thickness: 1px;
-    text-decoration-color: color-mix(in srgb, currentcolor 50%, transparent);
+    text-decoration-color: color-mix(in srgb, currentcolor 60%, transparent);
     text-underline-offset: 0.0625em;
   }
 
