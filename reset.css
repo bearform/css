@@ -13,6 +13,7 @@
     color: CanvasText;
     font-synthesis: none;
     font-family: system-ui, sans-serif;
+    -webkit-text-size-adjust: none;
   }
 
   /* Sections */
