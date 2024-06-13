@@ -1,0 +1,85 @@
+@layer utilities {
+  :root {
+    --size-interval: 0.25rlh;
+    --size-1: var(--size-interval);
+    --size-2: calc(var(--size-interval) * 2);
+    --size-3: calc(var(--size-interval) * 3);
+    --size-4: calc(var(--size-interval) * 4);
+    --size-5: calc(var(--size-interval) * 5);
+    --size-6: calc(var(--size-interval) * 6);
+    --size-7: calc(var(--size-interval) * 7);
+    --size-8: calc(var(--size-interval) * 8);
+    --size-9: calc(var(--size-interval) * 9);
+    --size-10: calc(var(--size-interval) * 10);
+    --size-11: calc(var(--size-interval) * 11);
+    --size-12: calc(var(--size-interval) * 12);
+    --size-13: calc(var(--size-interval) * 13);
+    --size-14: calc(var(--size-interval) * 14);
+    --size-15: calc(var(--size-interval) * 15);
+    --size-16: calc(var(--size-interval) * 16);
+  }
+
+  .stack-1 > * + * {
+    margin-block-start: var(--size-1);
+  }
+
+  .stack-2 > * + * {
+    margin-block-start: var(--size-2);
+  }
+
+  .stack-3 > * + * {
+    margin-block-start: var(--size-3);
+  }
+
+  .stack-4 > * + * {
+    margin-block-start: var(--size-4);
+  }
+
+  .stack-5 > * + * {
+    margin-block-start: var(--size-5);
+  }
+
+  .stack-6 > * + * {
+    margin-block-start: var(--size-6);
+  }
+
+  .stack-7 > * + * {
+    margin-block-start: var(--size-7);
+  }
+
+  .stack-8 > * + * {
+    margin-block-start: var(--size-8);
+  }
+
+  .stack-9 > * + * {
+    margin-block-start: var(--size-9);
+  }
+
+  .stack-10 > * + * {
+    margin-block-start: var(--size-10);
+  }
+
+  .stack-11 > * + * {
+    margin-block-start: var(--size-11);
+  }
+
+  .stack-12 > * + * {
+    margin-block-start: var(--size-12);
+  }
+
+  .stack-13 > * + * {
+    margin-block-start: var(--size-13);
+  }
+
+  .stack-14 > * + * {
+    margin-block-start: var(--size-14);
+  }
+
+  .stack-15 > * + * {
+    margin-block-start: var(--size-15);
+  }
+
+  .stack-16 > * + * {
+    margin-block-start: var(--size-16);
+  }
+}
