@@ -11,7 +11,8 @@ User agent style sheets:
 @layer reset {
   *,
   ::before,
-  ::after {
+  ::after,
+  ::backdrop {
     box-sizing: border-box;
   }
 
@@ -20,6 +21,8 @@ User agent style sheets:
     font-family: system-ui, sans-serif;
     font-synthesis: none;
     -webkit-text-size-adjust: none;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.125em;
   }
 
   /* Sections */
@@ -54,8 +57,10 @@ User agent style sheets:
   }
 
   hr {
-    border-width: 1px 0 0;
+    border-block-width: 1px 0;
+    border-inline-width: 0;
     border-style: solid;
+    color: unset;
   }
 
   blockquote,
@@ -67,10 +72,7 @@ User agent style sheets:
   ul,
   menu {
     padding-inline-start: unset;
-  }
-
-  li {
-    list-style: none;
+    list-style-type: none;
   }
 
   li::marker {
@@ -85,9 +87,6 @@ User agent style sheets:
 
   a {
     color: unset;
-    text-decoration-thickness: 1px;
-    text-decoration-color: color-mix(in srgb, currentcolor 60%, transparent);
-    text-underline-offset: 0.0625em;
   }
 
   a:has(> :where(img, svg, iframe, embed, object, video, audio, svg, canvas)) {
@@ -169,11 +168,11 @@ User agent style sheets:
   }
 
   input:where([type='color'], [type='image'], [type='range']) {
-    vertical-align: bottom;
+    vertical-align: text-bottom;
   }
 
   textarea {
-    vertical-align: unset;
+    vertical-align: text-top;
   }
 
   fieldset {
