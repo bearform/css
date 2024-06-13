@@ -1,3 +1,13 @@
+/*
+  HTML elements:
+    https://html.spec.whatwg.org/multipage/#toc-semantics
+
+  User agent style sheets:
+    Blink: https://chromium.googlesource.com/chromium/src/+/refs/heads/main/third_party/blink/renderer/core/html/resources/html.css
+    WebCore: https://github.com/WebKit/WebKit/blob/main/Source/WebCore/css/html.css
+    Gecko: https://searchfox.org/mozilla-central/source/layout/style/res/html.css
+*/
+
 @layer reset {
   *,
   ::before,
@@ -11,8 +21,6 @@
     font-synthesis: none;
     -webkit-text-size-adjust: none;
   }
-
-  /* https://html.spec.whatwg.org/multipage/#toc-semantics */
 
   /* Sections */
 
