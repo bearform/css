@@ -8,7 +8,7 @@ User agent style sheets:
   Gecko: https://searchfox.org/mozilla-central/source/layout/style/res/html.css
 */
 
-@layer reset {
+@layer reset-plus {
   *,
   ::before,
   ::after,
