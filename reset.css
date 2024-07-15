@@ -8,95 +8,93 @@ User agent style sheets:
   Gecko: https://searchfox.org/mozilla-central/source/layout/style/res/html.css
 */
 
-@layer reset {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
 
-  :root {
-    font-family: system-ui, sans-serif;
-    -webkit-text-size-adjust: none;
-  }
+:root {
+  font-family: system-ui, sans-serif;
+  -webkit-text-size-adjust: none;
+}
 
-  /* Sections */
+/* Sections */
 
-  body {
-    margin: 0;
-  }
+body {
+  margin: 0;
+}
 
-  h1,
-  h2,
-  h3,
-  h4,
-  h5,
-  h6 {
-    margin-block: 0;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-block: 0;
+}
 
-  /* Grouping content */
+/* Grouping content */
 
-  p,
-  hr,
-  blockquote,
-  ol,
-  ul,
-  menu,
-  dl,
-  figure {
-    margin-block: 0;
-  }
+p,
+hr,
+blockquote,
+ol,
+ul,
+menu,
+dl,
+figure {
+  margin-block: 0;
+}
 
-  pre {
-    margin: 0;
-  }
+pre {
+  margin: 0;
+}
 
-  blockquote,
-  figure {
-    margin-inline: 0;
-  }
+blockquote,
+figure {
+  margin-inline: 0;
+}
 
-  ol,
-  ul,
-  menu {
-    padding-inline-start: 0;
-    list-style-type: none;
-  }
+ol,
+ul,
+menu {
+  padding-inline-start: 0;
+  list-style-type: none;
+}
 
-  li::marker {
-    line-height: 0;
-  }
+li::marker {
+  line-height: 0;
+}
 
-  dd {
-    margin-inline-start: 0;
-  }
+dd {
+  margin-inline-start: 0;
+}
 
-  /*  Text-level semantics  */
+/*  Text-level semantics  */
 
-  a {
-    color: inherit;
-    text-decoration: none;
-  }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
-  sub,
-  sup {
-    line-height: 0;
-  }
+sub,
+sup {
+  line-height: 0;
+}
 
-  /* Embedded content */
+/* Embedded content */
 
-  img,
-  svg,
-  iframe,
-  embed,
-  object,
-  video,
-  audio,
-  svg,
-  canvas {
-    display: block;
-    max-inline-size: 100%;
-    block-size: auto;
-  }
+img,
+svg,
+iframe,
+embed,
+object,
+video,
+audio,
+svg,
+canvas {
+  display: block;
+  max-inline-size: 100%;
+  block-size: auto;
 }
