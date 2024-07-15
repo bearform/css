@@ -95,6 +95,6 @@ audio,
 svg,
 canvas {
   display: block;
-  max-inline-size: 100%;
-  block-size: auto;
+  max-width: 100%;
+  height: auto;
 }
