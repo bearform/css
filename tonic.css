@@ -1,0 +1,79 @@
+/*
+HTML elements:
+  https://html.spec.whatwg.org/multipage/#toc-semantics
+
+User agent style sheets:
+  Gecko: https://searchfox.org/mozilla-central/source/layout/style/res/html.css
+  Blink: https://chromium.googlesource.com/chromium/src/+/refs/heads/main/third_party/blink/renderer/core/html/resources/html.css
+  WebCore: https://github.com/WebKit/WebKit/blob/main/Source/WebCore/css/html.css
+*/
+
+@layer tonic {
+  *,
+  ::before,
+  ::after {
+    box-sizing: border-box;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+  }
+
+  :root {
+    font-family: system-ui, sans-serif;
+    font-feature-settings: "liga" 1, "calt" 1;
+    font-synthesis: none;
+    -webkit-text-size-adjust: none;
+  }
+
+  /* Sections */
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: inherit;
+  }
+
+  address {
+    font-style: inherit;
+  }
+
+  /* Grouping content */
+
+  li::marker {
+    line-height: 0;
+  }
+
+  /*  Text-level semantics  */
+
+  a {
+    color: inherit;
+    text-decoration-line: none;
+  }
+
+  sub,
+  sup {
+    line-height: 0;
+  }
+
+  /* Embedded content */
+
+  img,
+  svg,
+  iframe,
+  embed,
+  object,
+  video,
+  audio,
+  svg,
+  canvas {
+    display: block;
+    block-size: auto;
+    max-inline-size: 100%;
+  }
+}
