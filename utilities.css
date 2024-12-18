@@ -3,13 +3,13 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-  }
 
-  .stack > * {
-    margin-block: unset;
-  }
+    > * {
+      margin-block: unset;
+    }
 
-  .stack > * + * {
-    margin-block-start: var(--space, revert-layer);
+    > * + * {
+      margin-block-start: var(--space, revert-layer);
+    }
   }
 }
