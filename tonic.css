@@ -1,24 +1,10 @@
-/*
-HTML elements:
-  https://html.spec.whatwg.org/multipage/#toc-semantics
-
-User agent style sheets:
-  Gecko: https://searchfox.org/mozilla-central/source/layout/style/res/html.css
-  Blink: https://chromium.googlesource.com/chromium/src/+/refs/heads/main/third_party/blink/renderer/core/html/resources/html.css
-  WebCore: https://github.com/WebKit/WebKit/blob/main/Source/WebCore/css/html.css
-*/
-
 @layer tonic {
   *,
   ::before,
   ::after {
     box-sizing: border-box;
-  }
-
-  * {
-    margin: 0;
-    padding: 0;
-    font-size: inherit;
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.0625em;
   }
 
   :root {
@@ -27,8 +13,12 @@ User agent style sheets:
     font-synthesis: none;
     -webkit-text-size-adjust: none;
   }
+}
 
-  /* Sections */
+@layer tonic.sections {
+  body {
+    margin: var(--space, revert-layer);
+  }
 
   h1,
   h2,
@@ -36,44 +26,90 @@ User agent style sheets:
   h4,
   h5,
   h6 {
-    font-weight: inherit;
+    margin-block: unset;
+    font-weight: unset;
+    font-size: unset;
+  }
+}
+
+@layer tonic.grouping-content {
+  p,
+  hr,
+  pre,
+  blockquote,
+  ol,
+  ul,
+  menu,
+  dl,
+  figure {
+    margin-block: unset;
   }
 
-  address {
-    font-style: inherit;
+  hr {
+    margin-block-end: -1px;
+    border: 0.5px solid;
+    color: unset;
   }
 
-  /* Grouping content */
+  blockquote,
+  figure {
+    margin-inline: var(--space, revert-layer);
+  }
+
+  ol,
+  ul,
+  menu {
+    padding-inline-start: var(--space, revert-layer);
+  }
 
   li::marker {
     line-height: 0;
   }
 
-  /*  Text-level semantics  */
+  dd {
+    margin-inline-start: var(--space, revert-layer);
+  }
+}
 
+@layer tonic-text-level-semantics {
   a {
-    color: inherit;
-    text-decoration-line: none;
+    color: unset;
   }
 
   sub,
   sup {
     line-height: 0;
   }
+}
 
-  /* Embedded content */
+@layer tonic.tabular-data {
+  table {
+    border-collapse: collapse;
+  }
 
-  img,
-  svg,
-  iframe,
-  embed,
-  object,
-  video,
-  audio,
-  svg,
-  canvas {
-    display: block;
-    block-size: auto;
-    max-inline-size: 100%;
+  caption,
+  th {
+    text-align: unset;
+  }
+
+  td,
+  th {
+    padding: unset;
+  }
+
+  th {
+    font-weight: unset;
+  }
+}
+
+@layer tonic.forms {
+  fieldset {
+    margin-inline: unset;
+    padding: unset;
+    border: unset;
+  }
+
+  legend {
+    padding-inline: unset;
   }
 }
