@@ -10,6 +10,6 @@
   }
 
   .stack > * + * {
-    margin-block-start: var(--gap, 1rlh);
+    margin-block-start: var(--space, revert-layer);
   }
 }
