@@ -71,7 +71,7 @@
   }
 }
 
-@layer tonic-text-level-semantics {
+@layer tonic.text-level-semantics {
   a {
     color: unset;
   }
