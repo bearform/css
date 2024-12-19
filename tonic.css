@@ -3,15 +3,14 @@
   ::before,
   ::after {
     box-sizing: border-box;
-    text-decoration-thickness: 1px;
-    text-underline-offset: 0.0625em;
   }
 
   :root {
-    font-family: system-ui, sans-serif;
-    font-feature-settings: "liga" 1, "calt" 1;
-    font-synthesis: none;
     -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font-family: system-ui, sans-serif;
+    font-variant-ligatures: common-ligatures contextual;
+    font-synthesis: none;
   }
 }
 
@@ -27,6 +26,8 @@
   h5,
   h6 {
     margin-block: unset;
+    overflow-wrap: break-word;
+    text-wrap: balance;
     font-weight: unset;
     font-size: unset;
   }
@@ -45,10 +46,21 @@
     margin-block: unset;
   }
 
+  p,
+  blockquote,
+  li,
+  dt,
+  dd,
+  figcaption {
+    text-wrap: pretty;
+  }
+
   hr {
-    margin-block-end: -1px;
-    border: 0.5px solid;
-    color: unset;
+    border: unset;
+  }
+
+  pre {
+    white-space: pre-wrap;
   }
 
   blockquote,
@@ -74,6 +86,15 @@
 @layer tonic.text-level-semantics {
   a {
     color: unset;
+
+    &:has(> :is(img, iframe, embed, object, video, audio, svg, canvas)) {
+      display: block;
+      inline-size: fit-content;
+    }
+  }
+
+  q {
+    quotes: none;
   }
 
   sub,
@@ -82,9 +103,35 @@
   }
 }
 
+@layer tonic.embedded-content {
+  img,
+  iframe,
+  embed,
+  object,
+  video,
+  audio,
+  svg,
+  canvas {
+    display: block;
+    max-inline-size: 100%;
+  }
+
+  img,
+  video,
+  svg,
+  canvas {
+    block-size: auto;
+  }
+
+  iframe {
+    border: unset;
+  }
+}
+
 @layer tonic.tabular-data {
   table {
     border-collapse: collapse;
+    border-spacing: var(--space, revert-layer);
   }
 
   caption,
@@ -103,6 +150,13 @@
 }
 
 @layer tonic.forms {
+  input,
+  button,
+  select,
+  textarea {
+    font: unset;
+  }
+
   fieldset {
     margin-inline: unset;
     padding: unset;
