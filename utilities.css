@@ -1,15 +1,15 @@
-@layer utilities {
+@layer utilities.stack {
   .stack {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+  }
 
-    & > * {
-      margin-block: 0;
-    }
+  .stack > * {
+    margin-block: 0;
+  }
 
-    & > * + * {
-      margin-block-start: var(--space, 1rlh);
-    }
+  .stack > * + * {
+    margin-block-start: var(--space, 1rlh);
   }
 }
