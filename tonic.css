@@ -52,10 +52,6 @@
 }
 
 @layer tonic.typography {
-  * {
-    line-height: calc(2ex + 4px);
-  }
-
   :root {
     overflow-wrap: break-word;
     -webkit-text-size-adjust: none;
