@@ -1,4 +1,4 @@
-@layer utilities.stack {
+@layer utilities {
   .stack {
     display: flex;
     flex-direction: column;
