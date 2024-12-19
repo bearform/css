@@ -12,4 +12,12 @@
   .stack > * + * {
     margin-block-start: var(--space, 1rlh);
   }
+
+  .sr-only {
+    display: inline-block;
+    contain: strict;
+    block-size: 1px;
+    inline-size: 1px;
+    margin: -1px;
+  }
 }
