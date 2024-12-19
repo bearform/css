@@ -1,22 +1,12 @@
-@layer tonic {
+@layer tonic.layout {
   *,
   ::before,
   ::after {
     box-sizing: border-box;
   }
 
-  :root {
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    font-family: system-ui, sans-serif;
-    font-variant-ligatures: common-ligatures contextual;
-    font-synthesis: none;
-  }
-}
-
-@layer tonic.sections {
   body {
-    margin: var(--space, revert-layer);
+    margin-inline: 0;
   }
 
   h1,
@@ -24,16 +14,7 @@
   h3,
   h4,
   h5,
-  h6 {
-    margin-block: unset;
-    overflow-wrap: break-word;
-    text-wrap: balance;
-    font-weight: unset;
-    font-size: unset;
-  }
-}
-
-@layer tonic.grouping-content {
+  h6,
   p,
   hr,
   pre,
@@ -43,67 +24,9 @@
   menu,
   dl,
   figure {
-    margin-block: unset;
+    margin-block: 0;
   }
 
-  p,
-  blockquote,
-  li,
-  dt,
-  dd,
-  figcaption {
-    text-wrap: pretty;
-  }
-
-  hr {
-    border: unset;
-  }
-
-  pre {
-    white-space: pre-wrap;
-  }
-
-  blockquote,
-  figure {
-    margin-inline: var(--space, revert-layer);
-  }
-
-  ol,
-  ul,
-  menu {
-    padding-inline-start: var(--space, revert-layer);
-  }
-
-  li::marker {
-    line-height: 0;
-  }
-
-  dd {
-    margin-inline-start: var(--space, revert-layer);
-  }
-}
-
-@layer tonic.text-level-semantics {
-  a {
-    color: unset;
-
-    &:has(> :is(img, iframe, embed, object, video, audio, svg, canvas)) {
-      display: block;
-      inline-size: fit-content;
-    }
-  }
-
-  q {
-    quotes: none;
-  }
-
-  sub,
-  sup {
-    line-height: 0;
-  }
-}
-
-@layer tonic.embedded-content {
   img,
   iframe,
   embed,
@@ -123,47 +46,60 @@
     block-size: auto;
   }
 
-  iframe {
-    border: unset;
+  table {
+    border-collapse: collapse;
   }
 }
 
-@layer tonic.tabular-data {
-  table {
-    border-collapse: collapse;
-    border-spacing: var(--space, revert-layer);
+@layer tonic.typography {
+  * {
+    line-height: calc(2ex + 4px);
+  }
+
+  :root {
+    overflow-wrap: break-word;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    font-family: system-ui, sans-serif;
+    font-variant-ligatures: contextual;
+    font-synthesis: none;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    text-wrap: balance;
+  }
+
+  pre {
+    white-space: pre-wrap;
+  }
+
+  pre,
+  code,
+  samp,
+  kbd {
+    font-family: ui-monospace, monospace;
+  }
+
+  li::marker,
+  sub,
+  sup {
+    line-height: 0;
   }
 
   caption,
   th {
-    text-align: unset;
+    text-align: start;
   }
 
-  td,
-  th {
-    padding: unset;
-  }
-
-  th {
-    font-weight: unset;
-  }
-}
-
-@layer tonic.forms {
   input,
   button,
   select,
   textarea {
-    font: unset;
-  }
-
-  fieldset {
-    margin-inline: unset;
-    padding: unset;
-    border: unset;
-  }
-
-  legend {
-    padding-inline: unset;
+    font-family: inherit;
   }
 }
