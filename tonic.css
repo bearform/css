@@ -6,7 +6,7 @@
   }
 
   body {
-    margin-inline: 0;
+    margin: 0;
   }
 
   h1,
@@ -102,5 +102,9 @@
   select,
   textarea {
     font-family: inherit;
+  }
+
+  input:is([type="radio" i], [type="checkbox" i]) {
+    margin: 0;
   }
 }
