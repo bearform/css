@@ -104,7 +104,7 @@
     font-family: inherit;
   }
 
-  input:is([type="radio" i], [type="checkbox" i]) {
+  input:is([type="checkbox" i], [type="radio" i]) {
     margin: 0;
   }
 }
