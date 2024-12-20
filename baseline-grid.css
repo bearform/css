@@ -1,0 +1,64 @@
+@layer baseline-grid {
+  @font-face {
+    font-family: -apple-system-fallback;
+    src: local("Helvetica Neue"), local("TeX Gyre Heros"), local("Roboto"), local("Liberation Sans"), local("Arial");
+    ascent-override: calc(100% * 1980 / 2048);
+    descent-override: calc(100% * 432 / 2048);
+    line-gap-override: calc(100% * 0 / 2048);
+  }
+
+  :root {
+    --unitsPerEm: 2048;
+    --ascent: 1980;
+    --descent: -432;
+    --lineGap: 0;
+    --capHeight: 1443;
+
+    --absDescent: max(var(--descent), -1 * var(--descent));
+    --lineHeight: calc(var(--ascent) + var(--absDescent) + var(--lineGap)) / var(--unitsPerEm);
+
+    --baselineRatio: calc((var(--unitsPerEm) - var(--ascent) + var(--absDescent)) / (2 * var(--unitsPerEm)));
+    --baselineOffset: calc((1lh - 1em) / 2 + 1em * var(--baselineRatio));
+
+    font-family: -apple-system, BlinkMacSystemFont, -apple-system-fallback, system-ui, sans-serif;
+    line-height: round(0.5em, 1px); /* rounding fixes Safari baseline alignment */
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  address,
+  p {
+    line-height: round(up, 2ex + 1rem * var(--lineHeight) - 1rem, 1rlh);
+
+    &::before,
+    &::after {
+      display: flow-root;
+      content-visibility: hidden;
+      content: "";
+    }
+
+    &::before {
+      margin-block-end: mod(var(--baselineOffset), 1rlh);
+    }
+
+    &::after {
+      margin-block-start: calc(-1 * var(--baselineOffset));
+    }
+
+    & + * {
+      margin-block-start: 2rlh;
+    }
+  }
+}
+
+@layer baseline-grid.visualization {
+  body {
+    background-image: linear-gradient(color-mix(in srgb, canvastext, canvas 80%) 1px, transparent 1px);
+    background-size: 1px 1rlh;
+    background-position-y: -1px;
+  }
+}
