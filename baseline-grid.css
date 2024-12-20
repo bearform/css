@@ -21,7 +21,7 @@
     --baselineOffset: calc((1lh - 1em) / 2 + 1em * var(--baselineRatio));
 
     font-family: -apple-system, BlinkMacSystemFont, -apple-system-fallback, system-ui, sans-serif;
-    line-height: 0.5;
+    line-height: round(0.5em, 1px); /* rounding fixes baseline alignment in Safari */
   }
 
   h1,
