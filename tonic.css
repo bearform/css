@@ -53,7 +53,7 @@
 
 @layer tonic.typography {
   :root {
-    overflow-wrap: break-word;
+    overflow-wrap: anywhere;
     -webkit-text-size-adjust: none;
     text-size-adjust: none;
     font-family: system-ui, sans-serif;
