@@ -21,7 +21,7 @@
     --baselineOffset: calc((1lh - 1em) / 2 + 1em * var(--baselineRatio));
 
     font-family: -apple-system, BlinkMacSystemFont, -apple-system-fallback, system-ui, sans-serif;
-    line-height: round(0.5em, 1px); /* rounding fixes Safari baseline alignment */
+    line-height: 0.5;
   }
 
   h1,
@@ -58,7 +58,9 @@
 @layer baseline-grid.visualization {
   body {
     background-image: linear-gradient(color-mix(in srgb, canvastext, canvas 80%) 1px, transparent 1px);
+    background-image: linear-gradient(#0080dc 1px, transparent 1px);
     background-size: 1px 1rlh;
     background-position-y: -1px;
+    outline: 1px solid #8080dc;
   }
 }
