@@ -57,9 +57,8 @@
 
 @layer baseline-grid.visualization {
   body {
-    background-image: linear-gradient(#0080dc 1px, transparent 1px);
+    background-image: linear-gradient(light-dark(#00c0ff, color-mix(in srgb, Canvas 75%, CanvasText)) 1px, transparent 1px);
     background-size: 1px 1rlh;
     background-position-y: -1px;
-    outline: 1px solid #8080dc;
   }
 }
