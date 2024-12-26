@@ -49,6 +49,10 @@
   table {
     border-collapse: collapse;
   }
+
+  input:is([type="checkbox" i], [type="radio" i]) {
+    margin: 0;
+  }
 }
 
 @layer tonic.typography {
@@ -102,9 +106,5 @@
   select,
   textarea {
     font-family: inherit;
-  }
-
-  input:is([type="checkbox" i], [type="radio" i]) {
-    margin: 0;
   }
 }
