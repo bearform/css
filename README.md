@@ -2,7 +2,7 @@
 
 A collection of useful snippets and style sheets.
 
-## Reference sources
+## Reference materials
 
 - [HTML elements](https://html.spec.whatwg.org/multipage/#toc-semantics)
 
