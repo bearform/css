@@ -63,6 +63,7 @@
     font-family: system-ui, sans-serif;
     font-variant-ligatures: contextual;
     font-synthesis: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
   h1,
