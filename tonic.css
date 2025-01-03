@@ -29,17 +29,17 @@
 
   blockquote,
   figure {
-    margin-inline: var(--inline-space, revert-layer);
+    margin-inline: var(--indent-size, revert-layer);
   }
 
   ol,
   ul,
   menu {
-    padding-inline-start: var(--inline-space, revert-layer);
+    padding-inline-start: var(--indent-size, revert-layer);
   }
 
   dd {
-    margin-inline-start: var(--inline-space, revert-layer);
+    margin-inline-start: var(--indent-size, revert-layer);
   }
 
   img,
@@ -133,9 +133,9 @@
 @layer tonic.utilities {
   .center {
     box-sizing: content-box;
-    max-inline-size: 60ch;
+    max-inline-size: var(--max-inline-size, 40rem);
     margin-inline: auto;
-    padding-inline: var(--inline-space, 1rem);
+    padding-inline: var(--inline-gap, 1rem);
   }
 
   .stack {
@@ -148,7 +148,7 @@
     }
 
     > * + * {
-      margin-block-start: var(--block-space, 1rlh);
+      margin-block-start: var(--block-gap, 1rlh);
     }
   }
 
