@@ -1,14 +1,15 @@
+/*! Tonic v0.0.1 | MIT License | https://github.com/bearform/css */
+
+/**
+Use with https://github.com/sindresorhus/modern-normalize for best results.
+*/
+
+/*
+Layout
+======
+*/
+
 @layer tonic.layout {
-  *,
-  ::before,
-  ::after {
-    box-sizing: border-box;
-  }
-
-  body {
-    margin: 0;
-  }
-
   h1,
   h2,
   h3,
@@ -50,35 +51,30 @@
   audio,
   svg,
   canvas {
-    display: block;
     max-inline-size: 100%;
+    vertical-align: text-bottom;
   }
 
-  img,
-  video,
-  svg,
-  canvas {
-    block-size: auto;
+  a:has(> :is(img, iframe, embed, object, video, audio, svg, canvas)) {
+    display: inline-block;
+    line-height: 0;
   }
 
   table {
     border-collapse: collapse;
   }
-
-  input:is([type='checkbox' i], [type='radio' i]) {
-    margin: 0;
-  }
 }
+
+/*
+Typography
+==========
+*/
 
 @layer tonic.typography {
   :root {
     overflow-wrap: anywhere;
-    -webkit-text-size-adjust: none;
-    text-size-adjust: none;
-    font-family: system-ui, sans-serif;
     font-variant-ligatures: contextual;
     font-synthesis: none;
-    -webkit-tap-highlight-color: transparent;
   }
 
   h1,
@@ -100,19 +96,6 @@
     white-space: pre-wrap;
   }
 
-  pre,
-  code,
-  samp,
-  kbd {
-    font-family: ui-monospace, monospace;
-  }
-
-  li::marker,
-  sub,
-  sup {
-    line-height: 0;
-  }
-
   a {
     color: inherit;
   }
@@ -121,14 +104,12 @@
   th {
     text-align: start;
   }
-
-  input,
-  button,
-  select,
-  textarea {
-    font-family: inherit;
-  }
 }
+
+/*
+Utilities
+=========
+*/
 
 @layer tonic.utilities {
   .center {

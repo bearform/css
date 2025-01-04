@@ -21,7 +21,7 @@
     --baselineOffset: calc((1lh - 1em) / 2 + 1em * var(--baselineRatio));
 
     font-family: -apple-system, BlinkMacSystemFont, -apple-system-fallback, system-ui, sans-serif;
-    line-height: round(0.5em, 1px); /* rounding fixes baseline alignment in Safari */
+    line-height: round(1.1em, 1px);
   }
 
   h1,
@@ -31,8 +31,10 @@
   h5,
   h6,
   address,
-  p {
-    line-height: round(up, 2ex + 1rem * var(--lineHeight) - 1rem, 1rlh);
+  p,
+  pre,
+  li {
+    line-height: round(2ex + 1rem * var(--lineHeight) - 1rem, 1rlh);
 
     &::before,
     &::after {
@@ -48,16 +50,12 @@
     &::after {
       margin-block-start: calc(-1 * var(--baselineOffset));
     }
-
-    & + * {
-      margin-block-start: 2rlh;
-    }
   }
 }
 
 @layer baseline-grid.visualization {
   body {
-    background-image: linear-gradient(light-dark(#00c0ff, color-mix(in srgb, Canvas 75%, CanvasText)) 1px, transparent 1px);
+    /* background-image: linear-gradient(#f369 1px, #0000 0); */
     background-size: 1px 1rlh;
     background-position-y: -1px;
   }
