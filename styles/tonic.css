@@ -1,6 +1,6 @@
 /*! Tonic v0.0.1 | MIT License | https://github.com/bearform/css */
 
-@import "modern-normalize.css" layer(modern-normalize);
+@import 'modern-normalize.css' layer(modern-normalize);
 
 /*
 Layout
@@ -8,6 +8,10 @@ Layout
 */
 
 @layer tonic.layout {
+  /**
+  Remove the default block spacing from elements (opinionated).
+  */
+
   h1,
   h2,
   h3,
@@ -26,20 +30,37 @@ Layout
     margin-block: 0;
   }
 
+  /**
+  Use a more modest, configurable default indent size for 'blockquote', 'figure', and lists (opinionated).
+  */
+
   blockquote,
   figure {
-    margin-inline: var(--indent-size, revert-layer);
+    margin-inline: var(--indent-size, 2rem);
   }
 
   ol,
   ul,
   menu {
-    padding-inline-start: var(--indent-size, revert-layer);
+    padding-inline-start: var(--indent-size, 2rem);
   }
 
   dd {
-    margin-inline-start: var(--indent-size, revert-layer);
+    margin-inline-start: var(--indent-size, 2rem);
   }
+
+  /**
+  Prevent 'li::marker' from affecting the line height in Safari.
+  */
+
+  li::marker {
+    line-height: 0;
+  }
+
+  /**
+  1. Prevent embedded content from overflowing the viewport (opinionated).
+  2. Remove the white space space below inline embedded content (opinionated).
+  */
 
   img,
   iframe,
@@ -49,14 +70,18 @@ Layout
   audio,
   svg,
   canvas {
-    max-inline-size: 100%;
-    vertical-align: text-bottom;
+    max-inline-size: 100%; /* 1 */
+    vertical-align: text-bottom; /* 2 */
   }
 
   a:has(> :is(img, iframe, embed, object, video, audio, svg, canvas)) {
-    display: inline-block;
-    line-height: 0;
+    display: inline-block; /* 2 */
+    line-height: 0; /* 2 */
   }
+
+  /**
+  Collapse table borders (opinionated).
+  */
 
   table {
     border-collapse: collapse;
@@ -96,6 +121,8 @@ Typography
 
   a {
     color: inherit;
+    text-decoration-thickness: round(up, 0.0625em, 0.5px);
+    text-underline-offset: max(1px, round(up, 0.03125em, 0.5px));
   }
 
   caption,
