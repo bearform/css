@@ -69,7 +69,7 @@ Typography
 */
 
 @layer tonic.typography {
-  :root {
+  html {
     overflow-wrap: anywhere;
     font-variant-ligatures: contextual;
     font-synthesis: none;
