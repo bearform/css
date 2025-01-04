@@ -1,8 +1,6 @@
 /*! Tonic v0.0.1 | MIT License | https://github.com/bearform/css */
 
-/**
-Use with https://github.com/sindresorhus/modern-normalize for best results.
-*/
+@import "modern-normalize.css" layer(tonic.modern-normalize);
 
 /*
 Layout
