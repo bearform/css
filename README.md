@@ -2,6 +2,8 @@
 
 A collection of useful snippets and style sheets.
 
+Tonic is a CSS reset that extends modern-normalize.
+
 ## Reference materials
 
 - [The elements of HTML](https://html.spec.whatwg.org/multipage/#toc-semantics)
