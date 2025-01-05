@@ -1,6 +1,6 @@
 # CSS
 
-A collection of useful snippets and style sheets.
+A collection of useful style sheets.
 
 Tonic is a CSS reset that extends [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
