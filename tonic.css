@@ -157,7 +157,7 @@ Typography
 
   /**
   1. Inherit the parent text color (opinionated).
-  2. Normalize underline decorations in all browsers.
+  2. Normalize the appearance of underlines.
   */
 
   a {
