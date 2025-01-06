@@ -1,0 +1,45 @@
+html {
+  --indent-size: 0;
+  --stack-gap: 0.5rlh;
+
+  @media (width >= 640px) {
+    font-size: 112.5%;
+  }
+
+  * {
+    line-height: round(1em + 4px, 1px);
+  }
+}
+
+body {
+  margin-block: 2rlh;
+  margin-inline: 2rem;
+  background-color: light-dark(#fff, #000);
+  color: light-dark(#000, #fff);
+  text-transform: lowercase;
+}
+
+main {
+  text-wrap: balance;
+}
+
+h1,
+h2 {
+  --stack-gap: 2rlh;
+
+  font-variation-settings: 'wdth' 106.25;
+  font-weight: inherit;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+ol,
+ul {
+  list-style: none;
+}
