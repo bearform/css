@@ -191,15 +191,4 @@ Utilities
       margin-block-start: var(--stack-gap, 1rlh);
     }
   }
-
-  .sr-only {
-    position: absolute;
-    contain: layout;
-    block-size: 1px;
-    inline-size: 1px;
-    margin: -1px;
-    padding: 0;
-    border-width: 0;
-    clip-path: inset(50%);
-  }
 }
