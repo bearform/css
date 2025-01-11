@@ -178,17 +178,7 @@ Utilities
 */
 
 @layer tonic.utilities {
-  .stack {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-
-    > * {
-      margin-block: 0;
-    }
-
-    > * + * {
-      margin-block-start: var(--stack-gap, 1rlh);
-    }
+  .stack > * + * {
+    margin-block-start: var(--stack-gap, 1rlh);
   }
 }
