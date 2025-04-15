@@ -95,7 +95,7 @@ Typography
 
 @layer tonic.typography {
   html {
-    overflow-wrap: anywhere;
+    overflow-wrap: break-word;
     font-variant-ligatures: contextual;
     font-synthesis: none;
   }
