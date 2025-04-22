@@ -9,6 +9,20 @@ Layout
 
 @layer tonic.layout {
   /**
+  Inherit grid properties by default (opinionated).
+  Useful for subgrids.
+  */
+
+  *,
+  ::before,
+  ::after {
+    grid-column: 1 / -1;
+    align-content: inherit;
+    align-items: inherit;
+    gap: inherit;
+  }
+
+  /**
   Remove the default block spacing from elements (opinionated).
   */
 
@@ -31,7 +45,7 @@ Layout
   }
 
   /**
-  Use a more modest, configurable default indent size for 'blockquote', 'figure', and lists (opinionated).
+  Use a more modest, configurable default indent size for `blockquote`, `figure`, and lists (opinionated).
   */
 
   blockquote,
@@ -50,7 +64,7 @@ Layout
   }
 
   /**
-  Prevent 'li::marker' from affecting the line height in Safari.
+  Prevent `li::marker` from affecting the line height in Safari.
   */
 
   li::marker {

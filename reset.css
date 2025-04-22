@@ -3,12 +3,26 @@
 @layer tonic.theme {
   :root {
     --tonic-indent-size: 0;
+    --tonic-stack-gap: 0;
   }
 }
 
 @layer tonic.typography {
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-weight: inherit;
+  }
+
   ol,
   ul {
-    list-style-type: none;
+    list-style: none;
+  }
+
+  a {
+    text-decoration: none;
   }
 }
