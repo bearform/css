@@ -1,4 +1,4 @@
-@import 'tonic.css';
+@import '@bearform/css/tonic.css';
 
 @layer tonic.theme {
   :root {
