@@ -3,11 +3,10 @@
 @layer theme {
   :root {
     --tonic-indent-size: 0;
-    --tonic-stack-gap: 0;
   }
 }
 
-@layer typography {
+@layer base.typography {
   h1,
   h2,
   h3,
