@@ -1,6 +1,6 @@
 html {
-  --indent-size: 0;
-  --stack-gap: 0.5rlh;
+  --tonic-indent-size: 0;
+  --tonic-stack-gap: 0.5rlh;
 
   @media (width >= 640px) {
     font-size: 112.5%;
@@ -25,7 +25,7 @@ main {
 
 h1,
 h2 {
-  --stack-gap: 2rlh;
+  --tonic-stack-gap: 2rlh;
 
   font-variation-settings: 'wdth' 106.25;
   font-weight: inherit;

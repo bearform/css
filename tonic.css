@@ -1,6 +1,6 @@
 @import 'modern-normalize/modern-normalize.css' layer(modern-normalize);
 
-/*! Tonic v0.0.1 | MIT License | https://github.com/bearform/css */
+/*! Tonic v0.0.3 | MIT License | https://github.com/bearform/css */
 
 /*
 Layout
@@ -36,17 +36,17 @@ Layout
 
   blockquote,
   figure {
-    margin-inline: var(--indent-size, 2.5rem);
+    margin-inline: var(--tonic-indent-size, 2.5rem);
   }
 
   ol,
   ul,
   menu {
-    padding-inline-start: var(--indent-size, 2.5rem);
+    padding-inline-start: var(--tonic-indent-size, 2.5rem);
   }
 
   dd {
-    margin-inline-start: var(--indent-size, 2.5rem);
+    margin-inline-start: var(--tonic-indent-size, 2.5rem);
   }
 
   /**
@@ -179,6 +179,6 @@ Utilities
 
 @layer tonic.utilities {
   .stack > * + * {
-    margin-block-start: var(--stack-gap, 1rlh);
+    margin-block-start: var(--tonic-stack-gap, 1rem);
   }
 }
