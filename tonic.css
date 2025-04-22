@@ -204,18 +204,15 @@ Utilities
 }
 
 @layer utilities.typography {
+  .tracking {
+    margin-inline-end: calc(var(--tonic-tracking, 0.025em) * -1);
+    letter-spacing: var(--tonic-tracking, 0.25em);
+  }
+
   .small-caps {
+    margin-inline-end: calc(var(--tonic-small-caps-tracking, 0.025em) * -1);
     font-variant-caps: all-small-caps;
     letter-spacing: var(--tonic-small-caps-tracking, 0.025em);
     word-spacing: calc(var(--tonic-small-caps-tracking, 0.025em) * -1);
-    margin-inline-end: calc(var(--tonic-small-caps-tracking, 0.025em) * -1);
-  }
-
-  .thin-space {
-    word-spacing: var(--tonic-thin-space-width, calc((1em / 5) - (1em / 3)));
-  }
-
-  .hair-space {
-    word-spacing: var(--tonic-hair-space-width, calc((1em / 8) - (1em / 3)));
   }
 }
