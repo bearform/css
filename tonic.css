@@ -7,7 +7,7 @@ Layout
 ======
 */
 
-@layer tonic.layout {
+@layer layout {
   /**
   1. Align content and items in the root element to the start of the cross-axis (opinionated).
   2. Inherit certain grid properties by default (opinionated). Useful for subgrids.
@@ -113,7 +113,7 @@ Typography
 ==========
 */
 
-@layer tonic.typography {
+@layer typography {
   html {
     overflow-wrap: break-word;
     font-variant-ligatures: contextual;
@@ -197,7 +197,7 @@ Utilities
 =========
 */
 
-@layer tonic.utilities {
+@layer utilities {
   .stack > * + * {
     margin-block-start: var(--tonic-stack-gap, 1rem);
   }
