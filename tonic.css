@@ -208,6 +208,6 @@ Utilities
     margin-inline-end: calc(var(--tonic-small-caps-tracking, 0.025em) * -1);
     font-variant-caps: all-small-caps;
     letter-spacing: var(--tonic-small-caps-tracking, 0.025em);
-    word-spacing: calc(var(--tonic-small-caps-tracking, 0.025em) * -1);
+    word-spacing: calc(var(--tonic-small-caps-tracking, 0.025em) * -0.5);
   }
 }
