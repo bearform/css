@@ -2,7 +2,7 @@
 
 @layer theme {
   :root {
-    --tonic-indent-size: 0;
+    --default-indent-size: 0;
   }
 }
 

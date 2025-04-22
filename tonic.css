@@ -56,17 +56,17 @@ Layout
 
   blockquote,
   figure {
-    margin-inline: var(--tonic-indent-size, 2.5rem);
+    margin-inline: var(--default-indent-size, 2.5rem);
   }
 
   ol,
   ul,
   menu {
-    padding-inline-start: var(--tonic-indent-size, 2.5rem);
+    padding-inline-start: var(--default-indent-size, 2.5rem);
   }
 
   dd {
-    margin-inline-start: var(--tonic-indent-size, 2.5rem);
+    margin-inline-start: var(--default-indent-size, 2.5rem);
   }
 
   /**
