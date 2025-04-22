@@ -21,6 +21,7 @@ Layout
     ::before,
     ::after {
       grid-column: 1 / -1; /* 2 */
+      grid-auto-flow: inherit; /* 2 */
       align-content: inherit; /* 2 */
       align-items: inherit; /* 2 */
       gap: inherit; /* 2 */
