@@ -1,9 +1,10 @@
 {
   "name": "@bearform/css",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "files": [
     "tonic.css",
+    "reset.css",
     "theme.css"
   ],
   "dependencies": {
