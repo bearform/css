@@ -1,45 +1,48 @@
-html {
-  --tonic-indent-size: 0;
-  --tonic-stack-gap: 0.5rlh;
+@import '@bearform/css/reset.css';
 
-  @media (width >= 640px) {
-    font-size: 112.5%;
+@layer theme {
+  :root {
+    --tonic-stack-gap: 0.5rlh;
+
+    @media (width >= 640px) {
+      font-size: 112.5%;
+    }
+
+    * {
+      line-height: round(1em + 4px, 1px);
+    }
+  }
+}
+
+@layer layout {
+  body {
+    margin-block: 2rlh;
+    margin-inline: 2rem;
+  }
+}
+
+@layer typography {
+  body {
+    background-color: light-dark(#fff, #000);
+    color: light-dark(#000, #fff);
+    text-transform: lowercase;
   }
 
-  * {
-    line-height: round(1em + 4px, 1px);
+  main {
+    text-wrap: balance;
   }
-}
 
-body {
-  margin-block: 2rlh;
-  margin-inline: 2rem;
-  background-color: light-dark(#fff, #000);
-  color: light-dark(#000, #fff);
-  text-transform: lowercase;
-}
+  h1,
+  h2 {
+    --tonic-stack-gap: 2rlh;
+    font-variation-settings: 'wdth' 106.25;
+  }
 
-main {
-  text-wrap: balance;
-}
+  h1 {
+    font-size: 2.5rem;
+  }
 
-h1,
-h2 {
-  --tonic-stack-gap: 2rlh;
-
-  font-variation-settings: 'wdth' 106.25;
-  font-weight: inherit;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 1.5rem;
-}
-
-ol,
-ul {
-  list-style: none;
+  h2 {
+    font-size: 1.5rem;
+  }
 }

@@ -7,7 +7,7 @@ Layout
 ======
 */
 
-@layer base.layout {
+@layer layout {
   /**
   1. Align content and items in the root element to the start of the cross-axis (opinionated).
   2. Inherit certain grid properties by default (opinionated). Useful for subgrids.
@@ -113,7 +113,7 @@ Typography
 ==========
 */
 
-@layer base.typography {
+@layer typography {
   html {
     overflow-wrap: break-word;
     font-variant-ligatures: contextual;
@@ -204,11 +204,6 @@ Utilities
 }
 
 @layer utilities.typography {
-  .tracking {
-    margin-inline-end: calc(var(--tonic-tracking, 0.025em) * -1);
-    letter-spacing: var(--tonic-tracking, 0.25em);
-  }
-
   .small-caps {
     margin-inline-end: calc(var(--tonic-small-caps-tracking, 0.025em) * -1);
     font-variant-caps: all-small-caps;
