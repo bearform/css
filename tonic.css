@@ -1,6 +1,6 @@
 @import 'modern-normalize/modern-normalize.css' layer(modern-normalize);
 
-/*! Tonic v0.0.3 | MIT License | https://github.com/bearform/css */
+/*! Tonic v0.0.4 | MIT License | https://github.com/bearform/css */
 
 /*
 Layout
@@ -189,25 +189,5 @@ Typography
   caption,
   th {
     text-align: start;
-  }
-}
-
-/*
-Utilities
-=========
-*/
-
-@layer utilities.layout {
-  .stack > * + * {
-    margin-block-start: var(--tonic-stack-gap, 1rem);
-  }
-}
-
-@layer utilities.typography {
-  .small-caps {
-    margin-inline-end: calc(var(--tonic-small-caps-tracking, 0.025em) * -1);
-    font-variant-caps: all-small-caps;
-    letter-spacing: var(--tonic-small-caps-tracking, 0.025em);
-    word-spacing: calc(var(--tonic-small-caps-tracking, 0.025em) * -0.5);
   }
 }

@@ -1,12 +1,11 @@
 {
   "name": "@bearform/css",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "private": true,
   "type": "module",
   "files": [
     "tonic.css",
-    "reset.css",
-    "theme.css"
+    "reset.css"
   ],
   "dependencies": {
     "modern-normalize": "^3.0.1"
