@@ -9,17 +9,22 @@ Layout
 
 @layer tonic.layout {
   /**
-  Inherit grid properties by default (opinionated).
-  Useful for subgrids.
+  1. Align content and items in the root element to the start of the cross-axis (opinionated).
+  2. Inherit certain grid properties by default (opinionated). Useful for subgrids.
   */
 
-  *,
-  ::before,
-  ::after {
-    grid-column: 1 / -1;
-    align-content: inherit;
-    align-items: inherit;
-    gap: inherit;
+  html {
+    align-content: start; /* 1 */
+    align-items: start; /* 1 */
+
+    *,
+    ::before,
+    ::after {
+      grid-column: 1 / -1; /* 2 */
+      align-content: inherit; /* 2 */
+      align-items: inherit; /* 2 */
+      gap: inherit; /* 2 */
+    }
   }
 
   /**
