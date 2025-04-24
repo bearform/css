@@ -1,4 +1,4 @@
-@import 'modern-normalize/modern-normalize.css' layer(modern-normalize);
+@import 'node_modules/modern-normalize/modern-normalize.css' layer(normalize);
 
 /*! Tonic v0.0.4 | MIT License | https://github.com/bearform/css */
 
@@ -8,26 +8,6 @@ Layout
 */
 
 @layer layout {
-  /**
-  1. Align content and items in the root element to the start of the cross-axis (opinionated).
-  2. Inherit certain grid properties by default (opinionated). Useful for subgrids.
-  */
-
-  html {
-    align-content: start; /* 1 */
-    align-items: start; /* 1 */
-
-    *,
-    ::before,
-    ::after {
-      grid-column: 1 / -1; /* 2 */
-      grid-auto-flow: inherit; /* 2 */
-      align-content: inherit; /* 2 */
-      align-items: inherit; /* 2 */
-      gap: inherit; /* 2 */
-    }
-  }
-
   /**
   Remove the default block spacing from elements (opinionated).
   */
