@@ -2,7 +2,7 @@
 
 A collection of useful CSS snippets and style sheets.
 
-[Tonic](packages/tonic) is an opinionated CSS normalization/reset that extends [modern-normalize](https://github.com/sindresorhus/modern-normalize).
+[Tonic](packages/tonic) is an opinionated normalization/reset that extends [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
 ## Reference materials
 
