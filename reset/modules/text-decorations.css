@@ -1,0 +1,15 @@
+a,
+s,
+abbr,
+u,
+ins,
+del {
+  text-decoration-thickness: 1px;
+}
+
+a,
+abbr,
+u,
+ins {
+  text-underline-offset: 1px;
+}
