@@ -3,12 +3,6 @@
   "private": true,
   "version": "0.0.5",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "default": "./index.css"
-    }
-  },
   "dependencies": {
     "modern-normalize": "^3.0.1"
   }

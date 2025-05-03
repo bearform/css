@@ -3,8 +3,12 @@
   "private": true,
   "type": "module",
   "workspaces": [
+    ".",
     "packages/*"
   ],
+  "exports": {
+    "./tonic.css": "./packages/tonic/index.css"
+  },
   "scripts": {
     "dev": "npm run dev --workspace demo",
     "format": "prettier --check ."
