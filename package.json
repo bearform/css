@@ -1,24 +1,12 @@
 {
-  "name": "@bearform/tonic",
   "private": true,
-  "version": "0.0.5",
   "type": "module",
-  "exports": {
-    ".": {
-      "types": "./index.d.ts",
-      "default": "./index.css"
-    }
-  },
   "workspaces": [
-    ".",
-    "demo"
+    "packages/*"
   ],
   "scripts": {
     "dev": "npm run dev --workspace demo",
     "format": "prettier --check ."
-  },
-  "dependencies": {
-    "modern-normalize": "^3.0.1"
   },
   "devDependencies": {
     "prettier": "^3.5.3"
