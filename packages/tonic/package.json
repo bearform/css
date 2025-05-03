@@ -1,9 +1,0 @@
-{
-  "name": "@bearform/tonic",
-  "private": true,
-  "version": "0.0.5",
-  "type": "module",
-  "dependencies": {
-    "modern-normalize": "^3.0.1"
-  }
-}
