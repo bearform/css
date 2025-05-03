@@ -4,7 +4,10 @@
   "version": "0.0.5",
   "type": "module",
   "exports": {
-    ".": "./src/index.css"
+    ".": {
+      "default": "./src/index.css",
+      "types": "./index.d.ts"
+    }
   },
   "scripts": {
     "dev": "vite",
