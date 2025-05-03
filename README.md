@@ -1,6 +1,6 @@
 # Tonic
 
-Tonic is a CSS normalization/reset that extends [modern-normalize](https://github.com/sindresorhus/modern-normalize).
+Tonic is an opinionated CSS normalization/reset that extends [modern-normalize](https://github.com/sindresorhus/modern-normalize).
 
 ## Reference materials
 
