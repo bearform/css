@@ -1,0 +1,14 @@
+sub,
+sup {
+  font-size: inherit;
+}
+
+sub {
+  bottom: unset;
+  font-variant-position: sub;
+}
+
+sup {
+  top: unset;
+  font-variant-position: super;
+}

@@ -1,0 +1,31 @@
+@counter-style number {
+  system: extends decimal;
+  suffix: '.\2004';
+}
+
+@counter-style bullet {
+  system: cyclic;
+  symbols: '⁃';
+  suffix: '\2008\2004';
+}
+
+@supports (-webkit-hyphens: none) {
+  @counter-style number {
+    system: extends decimal;
+    suffix: '.';
+  }
+
+  @counter-style bullet {
+    system: cyclic;
+    symbols: '⁃';
+    suffix: '\2008';
+  }
+}
+
+ol {
+  list-style-type: number;
+}
+
+ul {
+  list-style-type: bullet;
+}
