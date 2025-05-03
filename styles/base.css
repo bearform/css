@@ -46,11 +46,11 @@ figure {
 ol,
 ul,
 menu {
-  padding-inline-start: var(--list-indent-size, 2.5rem);
+  padding-inline-start: var(--list-indent, 2.5rem);
 }
 
 dd {
-  margin-inline-start: var(--list-indent-size, 2.5rem);
+  margin-inline-start: var(--list-indent, 2.5rem);
 }
 
 a {
