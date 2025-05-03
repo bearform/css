@@ -1,4 +1,5 @@
 {
+  "name": "@bearform/css",
   "private": true,
   "type": "module",
   "workspaces": [

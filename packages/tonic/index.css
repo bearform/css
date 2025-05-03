@@ -2,8 +2,8 @@
 
 /*! Tonic v0.0.5 | MIT License | https://github.com/bearform/css */
 
-@import 'base.css' layer(tonic);
+@import 'styles/base.css' layer(tonic);
 
-@import 'typography/lines.css' layer(tonic);
-@import 'typography/lists.css' layer(tonic);
-@import 'typography/subsuper.css' layer(tonic);
+@import 'styles/lines.css' layer(tonic);
+@import 'styles/lists.css' layer(tonic);
+@import 'styles/subsuper.css' layer(tonic);
