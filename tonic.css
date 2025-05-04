@@ -1,6 +1,6 @@
-@import './base/preflight.css' layer(preflight);
-@import './base/preflight-extra.css' layer(preflight);
+@import './base/preflight.css' layer(tonic.preflight);
+@import './base/preflight-extra.css' layer(tonic.preflight);
 
-@import './packs/text-decorations.css' layer(base);
-@import './packs/text-positions.css' layer(base);
-@import './packs/lists.css' layer(base);
+@import './packs/text-decorations.css' layer(tonic.base);
+@import './packs/text-positions.css' layer(tonic.base);
+@import './packs/lists.css' layer(tonic.base);
