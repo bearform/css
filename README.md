@@ -2,7 +2,7 @@
 
 A collection of useful snippets and style sheets.
 
-[Tonic](tonic) is an opinionated normalization/reset that extends [modern-normalize](https://github.com/sindresorhus/modern-normalize).
+[Tonic](tonic.css) is an opinionated CSS reset that extends [Preflight](https://tailwindcss.com/docs/preflight).
 
 ## Reference materials
 

@@ -1,0 +1,24 @@
+/*
+  Revert text decoration removal from links.
+*/
+
+a {
+  text-decoration: revert-layer;
+}
+
+/*
+  Align text in table captions and headers to the start.
+*/
+
+caption,
+th {
+  text-align: start;
+}
+
+/*
+  Remove the default font weight for table headers.
+*/
+
+th {
+  font-weight: inherit;
+}

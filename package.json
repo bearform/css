@@ -1,22 +1,13 @@
 {
   "name": "@bearform/css",
   "private": true,
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
-  "workspaces": [
-    "demo"
-  ],
   "exports": {
-    "./tonic.css": "./tonic/index.css"
+    "./tonic.css": "./tonic.css"
   },
   "scripts": {
-    "dev": "npm run dev --workspace demo",
-    "format": "prettier --check ."
-  },
-  "dependencies": {
-    "modern-normalize": "^3.0.1"
-  },
-  "devDependencies": {
-    "prettier": "^3.5.3"
+    "dev": "npx vite",
+    "fetch-preflight": "node fetch-preflight.js"
   }
 }
