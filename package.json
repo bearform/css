@@ -3,8 +3,11 @@
   "private": true,
   "version": "0.0.6",
   "type": "module",
+  "files": [
+    "styles/*"
+  ],
   "exports": {
-    "./tonic.css": "./tonic.css"
+    "./*": "./styles/*"
   },
   "scripts": {
     "dev": "npx vite",

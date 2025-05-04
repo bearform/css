@@ -1,6 +1,6 @@
 import fs from 'node:fs/promises'
 
-const outputPath = 'base/preflight.css'
+const outputPath = 'styles/base/preflight.css'
 const preflightUrl =
   'https://raw.githubusercontent.com/tailwindlabs/tailwindcss/refs/heads/main/packages/tailwindcss/preflight.css'
 
