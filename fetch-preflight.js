@@ -1,18 +1,18 @@
 import fs from 'node:fs/promises'
 
-const outputPath = 'styles/base/preflight.css'
+const outputDir = 'lib'
 const preflightUrl =
   'https://raw.githubusercontent.com/tailwindlabs/tailwindcss/refs/heads/main/packages/tailwindcss/preflight.css'
 
 try {
   const response = await fetch(preflightUrl)
   const content = await response.text()
-  const transformed = content.replace(
-    /\B--theme\(\s*--.*?,\s*(.*?)\s*\)/gs,
-    '$1',
-  )
+  const transformed = content
+    .replace(/\B--theme\(\s*--.*?,\s*(.*?)\s*\)/gs, '$1')
+    .replace(/\s*(-webkit-)?text-decoration: inherit;/gs, '')
 
-  await fs.writeFile(outputPath, transformed)
+  await fs.mkdir(outputDir, { recursive: true })
+  await fs.writeFile(`${outputDir}/preflight.css`, transformed)
   console.log(
     'Preflight CSS was downloaded, transformed, and saved successfully.',
   )

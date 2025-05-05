@@ -1,16 +1,21 @@
 {
   "name": "@bearform/css",
   "private": true,
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "files": [
-    "styles/*"
+    "dist/*"
   ],
   "exports": {
-    "./*": "./styles/*"
+    "./*": "./dist/*"
   },
   "scripts": {
-    "dev": "npx vite",
+    "dev": "vite",
+    "build": "lightningcss --bundle --targets 'defaults' src/tonic.css -o dist/tonic.css",
     "fetch-preflight": "node fetch-preflight.js"
+  },
+  "devDependencies": {
+    "lightningcss-cli": "^1.29.3",
+    "vite": "^6.3.5"
   }
 }

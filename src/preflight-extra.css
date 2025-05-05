@@ -1,12 +1,4 @@
 /*
-  Revert text decoration removal from links.
-*/
-
-a {
-  text-decoration: revert-layer;
-}
-
-/*
   Align text in table captions and headers to the start.
 */
 
