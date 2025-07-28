@@ -1,0 +1,11 @@
+input,
+button,
+select,
+textarea {
+  font: inherit;
+}
+
+textarea {
+  inline-size: 100%;
+  resize: vertical;
+}

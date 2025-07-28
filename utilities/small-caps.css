@@ -1,0 +1,6 @@
+.small-caps {
+  margin-inline-end: calc(var(--caps-tracking, 0.025em) * -1);
+  font-variant-caps: all-small-caps;
+  letter-spacing: var(--caps-tracking, 0.025em);
+  word-spacing: calc(var(--caps-tracking, 0.025em) * -0.5);
+}

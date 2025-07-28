@@ -1,0 +1,136 @@
+@layer tonic.layout {
+  :root {
+    --indent: 2.5rem;
+    --blockquote-indent: var(--indent);
+    --list-indent: var(--indent);
+    --ordered-list-indent: var(--list-indent);
+    --unordered-list-indent: var(--list-indent);
+    --description-list-indent: var(--list-indent);
+    --figure-indent: var(--indent);
+  }
+
+  body {
+    margin: 0;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6),
+  p,
+  pre,
+  blockquote,
+  :is(ol, ul, menu, dl),
+  figure {
+    margin-block-end: 0;
+  }
+
+  blockquote {
+    margin-inline: var(--blockquote-indent);
+  }
+
+  ol {
+    padding-inline-start: var(--ordered-list-indent);
+  }
+
+  :is(ul, menu) {
+    padding-inline-start: var(--unordered-list-indent);
+  }
+
+  :is(ol, ul, menu)[role='list'] {
+    list-style-type: none;
+    padding-inline-start: 0;
+  }
+
+  dd {
+    margin-inline-start: var(--description-list-indent);
+  }
+
+  figure {
+    margin-inline: var(--figure-indent);
+  }
+
+  img,
+  iframe,
+  embed,
+  object,
+  video,
+  audio,
+  svg,
+  canvas {
+    max-inline-size: 100%;
+    vertical-align: middle;
+  }
+
+  img,
+  video,
+  svg,
+  canvas {
+    block-size: auto;
+  }
+}
+
+@layer tonic.typography {
+  :root {
+    -webkit-text-size-adjust: none;
+  }
+
+  body {
+    font-family: ui-sans-serif, -apple-system, sans-serif;
+    /* 1.33 = (1 - 0.67) + 1 */
+    line-height: calc(1.33 / 1);
+  }
+
+  h1 {
+    /* 2.33 = (1 - 0.67) + 2 */
+    line-height: calc(2.33 / 2);
+  }
+
+  h2 {
+    /* 1.83 = (1 - 0.67) + 1.5 */
+    line-height: calc(1.83 / 1.5);
+  }
+
+  h3 {
+    /* 1.5 = (1 - 0.67) + 1.17 */
+    line-height: calc(1.5 / 1.17);
+  }
+
+  h4 {
+    /* 1.33 = (1 - 0.67) + 1 */
+    line-height: calc(1.33 / 1);
+  }
+
+  h5 {
+    /* 1.16 = (1 - 0.67) + 0.83 */
+    line-height: calc(1.16 / 0.83);
+  }
+
+  h6 {
+    /* 1 = (1 - 0.67) + 0.67 */
+    line-height: calc(1 / 0.67);
+  }
+
+  pre,
+  code,
+  samp,
+  kbd {
+    font-family: ui-monospace, monospace;
+    font-size: 0.83em;
+    /* 1.16 = (1 - 0.67) + 0.83 */
+    line-height: calc(1.16 / 0.83);
+  }
+
+  a,
+  s,
+  abbr,
+  u,
+  ins,
+  del {
+    text-decoration-thickness: 1px;
+  }
+
+  a,
+  abbr,
+  u,
+  ins {
+    text-underline-offset: 1.5px;
+  }
+}

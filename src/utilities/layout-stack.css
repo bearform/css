@@ -1,3 +1,0 @@
-.stack > * + * {
-  margin-block-start: var(--stack-gap, 1rem);
-}
