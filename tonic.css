@@ -7,6 +7,9 @@
     --unordered-list-indent: var(--list-indent);
     --description-list-indent: var(--list-indent);
     --figure-indent: var(--indent);
+
+    --decoration-thickness: 1px;
+    --underline-offset: 1.5px;
   }
 
   body {
@@ -120,13 +123,13 @@
   u,
   ins,
   del {
-    text-decoration-thickness: 1px;
+    text-decoration-thickness: var(--decoration-thickness);
   }
 
   a,
   abbr,
   u,
   ins {
-    text-underline-offset: 1.5px;
+    text-underline-offset: var(--underline-offset);
   }
 }
