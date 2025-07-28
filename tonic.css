@@ -26,6 +26,10 @@
     margin-inline: var(--blockquote-indent);
   }
 
+  :is(ol, ul, menu, dl) :is(:is(h1, h2, h3, h4, h5, h6), p, pre, blockquote, :is(ol, ul, menu, dl), figure):first-child {
+    margin-block-start: 0;
+  }
+
   ol {
     padding-inline-start: var(--ordered-list-indent);
   }
@@ -74,38 +78,31 @@
 
   body {
     font-family: ui-sans-serif, -apple-system, sans-serif;
-    /* 1.33 = (1 - 0.67) + 1 */
-    line-height: calc(1.33 / 1);
+    line-height: calc((0.33 + 1) / 1);
   }
 
   h1 {
-    /* 2.33 = (1 - 0.67) + 2 */
-    line-height: calc(2.33 / 2);
+    line-height: calc((0.33 + 2) / 2);
   }
 
   h2 {
-    /* 1.83 = (1 - 0.67) + 1.5 */
-    line-height: calc(1.83 / 1.5);
+    line-height: calc((0.33 + 1.5) / 1.5);
   }
 
   h3 {
-    /* 1.5 = (1 - 0.67) + 1.17 */
-    line-height: calc(1.5 / 1.17);
+    line-height: calc((0.33 + 1.17) / 1.17);
   }
 
   h4 {
-    /* 1.33 = (1 - 0.67) + 1 */
-    line-height: calc(1.33 / 1);
+    line-height: calc((0.33 + 1) / 1);
   }
 
   h5 {
-    /* 1.16 = (1 - 0.67) + 0.83 */
-    line-height: calc(1.16 / 0.83);
+    line-height: calc((0.33 + 0.83) / 0.83);
   }
 
   h6 {
-    /* 1 = (1 - 0.67) + 0.67 */
-    line-height: calc(1 / 0.67);
+    line-height: calc((0.33 + 0.67) / 0.67);
   }
 
   pre,
@@ -114,8 +111,7 @@
   kbd {
     font-family: ui-monospace, monospace;
     font-size: 0.83em;
-    /* 1.16 = (1 - 0.67) + 0.83 */
-    line-height: calc(1.16 / 0.83);
+    line-height: calc((0.33 + 0.83) / 0.83);
   }
 
   a,
