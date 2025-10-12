@@ -29,7 +29,15 @@
     margin-inline: var(--blockquote-indent);
   }
 
-  :is(ol, ul, menu, dl) :is(:is(h1, h2, h3, h4, h5, h6), p, pre, blockquote, :is(ol, ul, menu, dl), figure):first-child {
+  :is(ol, ul, menu, dl)
+    :is(
+      :is(h1, h2, h3, h4, h5, h6),
+      p,
+      pre,
+      blockquote,
+      :is(ol, ul, menu, dl),
+      figure
+    ):first-child {
     margin-block-start: 0;
   }
 
