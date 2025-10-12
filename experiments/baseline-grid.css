@@ -19,7 +19,12 @@
   --baselineRatio: calc((var(--unitsPerEm) - var(--ascent) + var(--absDescent)) / (2 * var(--unitsPerEm)));
   --baselineOffset: calc((1lh - 1em) / 2 + 1em * var(--baselineRatio));
 
-  font-family: -apple-system, BlinkMacSystemFont, -apple-system-fallback, system-ui, sans-serif;
+  font-family:
+    -apple-system,
+    BlinkMacSystemFont,
+    -apple-system-fallback,
+    system-ui,
+    sans-serif;
   line-height: round(1.1em, 1px);
 }
 

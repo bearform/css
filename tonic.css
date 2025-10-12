@@ -80,7 +80,10 @@
   }
 
   body {
-    font-family: ui-sans-serif, -apple-system, sans-serif;
+    font-family:
+      ui-sans-serif,
+      -apple-system,
+      sans-serif;
     line-height: calc((0.33 + 1) / 1);
   }
 
