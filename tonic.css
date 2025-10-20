@@ -9,8 +9,7 @@
   blockquote,
   :is(ol, ul, menu, dl),
   figure {
-    margin-block-start: 1em;
-    margin-block-end: 1rem;
+    margin-block: 1em 1rem;
   }
 
   :is(ol, ul, menu, dl) :is(ol, ul, menu, dl) {
