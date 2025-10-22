@@ -99,7 +99,7 @@
   samp,
   kbd {
     font-family: ui-monospace, monospace;
-    font-size: 0.8em;
+    font-size: 0.83em;
     line-height: calc((0.33 + 0.83) / 0.83);
   }
 }
