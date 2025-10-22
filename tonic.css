@@ -94,12 +94,13 @@
     font-style: inherit;
   }
 
-  pre,
-  code,
-  samp,
-  kbd {
+  :is(pre, code, samp, kbd) {
     font-family: ui-monospace, monospace;
     font-size: 0.83em;
     line-height: calc((0.33 + 0.83) / 0.83);
+  }
+
+  :is(pre, code, samp, kbd) :is(pre, code, samp, kbd) {
+    font-size: revert-layer;
   }
 }
