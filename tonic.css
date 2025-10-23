@@ -13,7 +13,7 @@
   }
 
   :is(ol, ul, menu, dl) :is(ol, ul, menu, dl) {
-    margin-block: revert-layer;
+    margin-block: 0;
   }
 
   blockquote,
@@ -101,6 +101,6 @@
   }
 
   :is(pre, code, samp, kbd) :is(pre, code, samp, kbd) {
-    font-size: revert-layer;
+    font-size: inherit;
   }
 }
