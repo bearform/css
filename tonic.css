@@ -51,6 +51,7 @@
 
 @layer tonic.typography {
   html {
+    overflow-wrap: break-word;
     font-synthesis: none;
     line-height: calc((0.33 + 1) / 1);
     -webkit-text-size-adjust: none;
@@ -92,6 +93,10 @@
 
   address {
     font-style: inherit;
+  }
+
+  pre {
+    white-space: pre-wrap;
   }
 
   :is(pre, code, samp, kbd) {
